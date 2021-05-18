@@ -8,3 +8,5 @@ resource "aws_instance" "imported_ec2" {
     "Name" = "import"
   }
 }
+
+#terraform import aws_instance.imported_ec2 i-0395b599cec14d9ea --> this command imports manually created instance from aws
