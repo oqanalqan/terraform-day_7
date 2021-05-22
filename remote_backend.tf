@@ -5,5 +5,6 @@ terraform {
     region = "us-east-1"
     profile = "default"
     dynamodb_table = "terraform-state-files" # this line prevents the state file to be updated by multiple users at the same time
+    #you need to create a dynamodb table with a field named as 'LockID'
   }
 }
