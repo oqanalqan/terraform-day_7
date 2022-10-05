@@ -4,10 +4,6 @@ pipeline {
     stage('Validate') {
       steps {
         echo 'terraform validate'
-        script {
-          terraform validate
-        }
-
       }
     }
 
